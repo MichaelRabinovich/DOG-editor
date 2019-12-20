@@ -42,5 +42,5 @@ The handles can be cleared/resetted by pressing 'c'. Optimization can be turned 
 The default editing scheme use a bending objective and an isometry objective with a high weight. The objective weights can be changed in the menu. Note that one can remove the isometry objective entirely, but in that case it is important to add some weight for the edge regularizing objective.  
 
 To visualize the Gauss Map or the surface rulings, simple change the ViewMode.
-![Alt text](data/images/GaussAndRulings?raw=true "Visualizing the Gauss map of the surface and the DOG discrete rulings")  
+![Alt text](data/images/GaussAndRulings.jpg?raw=true "Visualizing the Gauss map of the surface and the DOG discrete rulings")  
 
