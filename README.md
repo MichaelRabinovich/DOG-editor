@@ -31,8 +31,10 @@ $ ./dog_edtior MESH_PATH.obj
 This simple editor supports vertex based editing, similar to the one demonstrated here: https://www.youtube.com/watch?v=rd5mg6VsfnA&t=78s  
 
 The user can select vertex handles by first moving to selection mode (by rolling the corresponding 'Edit mode' button or simply pressing 's') and then marking vertices.  
+
 ![Alt text](data/images/selection.jpg?raw=true "Selecting vertex handles")  
 After vertices have been selected, the user can translate them by moving to translate mode (by rolling the corresponding 'Edit mode' button or simply pressing 'd').  
+  
 ![Alt text](data/images/translation.jpg?raw=true "Translating handles")  
 The handles can be cleared/resetted by pressing 'c'. Optimization can be turned off/on by unticking/ticking the "is_optimizing" box or by pressing the space button. This can be useful if one wants to set new constraints after a short deformation, as otherwise the sheet will often quickly flatten.
 
