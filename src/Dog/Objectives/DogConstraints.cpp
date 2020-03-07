@@ -1133,6 +1133,8 @@ void DogConstraints::updateLambdaHessianIJV(const Eigen::VectorXd& x, const Eige
 		lambda_hessian_IJV[ijv_idx++] = Eigen::Triplet<double>(p_yf_i+2*vnum,p_yf_i, -lambda2*t529-lambda1*(t157+t479+t494-t514-t528-t49*t58*t79*t81*t113*(3.0/4.0)));
 		lambda_hessian_IJV[ijv_idx++] = Eigen::Triplet<double>(p_yf_i+2*vnum,p_yf_i+vnum, -lambda2*t531-lambda1*(t201+t498+t513-t515-t530-t58*t79*t81*t92*t113*(3.0/4.0)));
 		lambda_hessian_IJV[ijv_idx++] = Eigen::Triplet<double>(p_yf_i+2*vnum,p_yf_i+2*vnum, lambda1*(t74-t235+t236-t491+t532-t47*t53*t58*t113)-lambda2*(t74-t235+t532));
+
+		const_cnt+=3;
 	}
 
 	for (int si = 0; si < quadTop.bnd3.rows(); si+=4) {
@@ -1525,5 +1527,7 @@ void DogConstraints::updateLambdaHessianIJV(const Eigen::VectorXd& x, const Eige
 		lambda_hessian_IJV[ijv_idx++] = Eigen::Triplet<double>(p_yf_i+2*vnum,p_yf_i, -lambda1*t254);
 		lambda_hessian_IJV[ijv_idx++] = Eigen::Triplet<double>(p_yf_i+2*vnum,p_yf_i+vnum, -lambda1*t255);
 		lambda_hessian_IJV[ijv_idx++] = Eigen::Triplet<double>(p_yf_i+2*vnum,p_yf_i+2*vnum, -lambda1*(t80+t123-t219-t4*t20*t30*t63+t10*t29*t30*t63-t29*t34*t41*t119*(3.0/4.0)));
+
+		const_cnt++;
 	 }
 }
